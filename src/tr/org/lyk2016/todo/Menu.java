@@ -17,13 +17,16 @@ public class Menu {
 		// hint: use a while loop
 
 		// for(Todo todo : TodoHelper.getTodos()){
-
+			
 		// TODO add checkbox according to 'done' status
 		// TODO add index numbers for users to choose
+		// deneme
+		int i=1;
 		while (todos.hasNext()) {
 			Todo todo = todos.next();
 			menu.append(todo.getCheckbox());
 			menu.append("(");
+			menu.append(i++);
 			menu.append(") ");
 			menu.append(" ");
 			menu.append(todo.getDescription());
